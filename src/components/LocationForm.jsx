@@ -12,7 +12,7 @@ const LocationForm = ({ handleSubmit }) => {
     const url = `https://rickandmortyapi.com/api/location?name=${newLocation}`;
 
     axios
-      .get(url + newLocation)
+      .get(url)
       .then(({ data }) => setSuggestions(data.results))
       .catch((err) => console.log(err));
   };
