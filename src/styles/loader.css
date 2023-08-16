@@ -1,0 +1,98 @@
+.displace{
+  height: 38px;
+  width: 38px;
+}
+/* Animación para controlar opacidad y desplazamiento */
+@keyframes showHide1 {
+  0% {
+    opacity:1; /* Mostrar la imagen */
+  }
+  100% {
+    opacity: .2; /* Ocultar la imagen */
+  }
+}
+.loader__animation1{
+  animation: showHide1 1.6s linear infinite;
+  animation-delay: .2s;
+}
+
+@keyframes showHide2 {
+  0% {
+    opacity: .2; /* Mostrar la imagen */
+  }
+  100% {
+    opacity: 1; /* Ocultar la imagen */
+  }
+}
+.loader__animation2{
+  animation: showHide2 1.6s linear infinite;
+  animation-delay: .4s;
+}
+
+@keyframes showHide3 {
+  0% {
+    opacity: .2; /* Mostrar la imagen */
+  }
+  100% {
+    opacity: 1; /* Ocultar la imagen */
+  }
+}
+.loader__animation3{
+  animation: showHide3 1.6s linear infinite;
+  animation-delay: .6s;
+}
+@keyframes showHide4 {
+  0% {
+    opacity: .2; /* Mostrar la imagen */
+  }
+  100% {
+    opacity: 1; /* Ocultar la imagen */
+  }
+}
+.loader__animation4{
+  animation: showHide4 1.6s linear infinite;
+  animation-delay: .8s;
+}
+
+@keyframes showHide5 {
+  0% {
+    opacity: .2; /* Mostrar la imagen */
+  }
+  100% {
+    opacity: 1; /* Ocultar la imagen */
+  }
+}
+.loader__animation5{
+  animation: showHide5 1.6s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes showHide6 {
+  0% {
+    opacity: .2; /* Mostrar la imagen */
+  }
+  100% {
+    opacity: 1; /* Ocultar la imagen */
+  }
+}
+.loader__animation6{
+  animation: showHide6 1.6s linear infinite;
+  animation-delay: 1.2s;
+}
+@keyframes showHide7 {
+  0% {
+    opacity: .2; /* Mostrar la imagen */
+  }
+  100% {
+    opacity: 1; /* Ocultar la imagen */
+  }
+}
+.loader__animation7{
+  animation: showHide7 1.6s linear infinite;
+  animation-delay: 1.4s;
+}
+
+
+
+
+
