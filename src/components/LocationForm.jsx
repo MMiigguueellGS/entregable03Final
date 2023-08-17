@@ -18,7 +18,7 @@ const LocationForm = ({ handleSubmit }) => {
   };
   return (
     <>
-      <form className="flex px-2 sm:mx-[15%] " onSubmit={handleSubmit}>
+      <form className="flex px-2 sm:mx-[15%] " onSubmit={(e) => handleSubmit(e, suggestions)}>
         <div className="relative   border-2 border-green-800 flex-1">
           <input
             className="w-full outline-none  bg-neutral-950 text-[#938686] text-center "

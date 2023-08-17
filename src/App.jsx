@@ -13,15 +13,21 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [currentLocation, setCurrentLocation] = useState(null);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e, suggestions) => {
     e.preventDefault();
     const newLocation = e.target.newLocation.value;
-    const url = `https://rickandmortyapi.com/api/location?name=${newLocation}`;
+    const suggestionList = suggestions.map((suggestion) => suggestion.name);
+    const selectDimension = suggestionList.find(
+      (elem) => elem.toLowerCase() === newLocation.toLowerCase()
+    );
 
-    axios
-      .get(url)
-      .then(({ data }) => setCurrentLocation(data.results[0]))
-      .catch((err) => console.log(err));
+    const url = `https://rickandmortyapi.com/api/location?name=${newLocation}`;
+    selectDimension
+      ? axios
+          .get(url)
+          .then(({ data }) => setCurrentLocation(data.results[0]))
+          .catch((err) => console.log(err))
+      : alert("Dimension No Existe");
   };
 
   const fecthDimension = (url) => {
