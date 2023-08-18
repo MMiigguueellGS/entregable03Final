@@ -12,8 +12,8 @@ const LocationInfo = ({ currentLocation }) => {
           <span className="text-[#938686]  font-medium">Type  </span>
           <span className="font-semibold">{currentLocation?.type}</span>
         </li>
-        <li>
-          <span className="text-[#938686] font-medium">Dimension </span>
+        <li className="text-center">
+          <span className="text-[#938686] font-medium ">Dimension </span>
           <span className="font-semibold truncate">{currentLocation?.dimension}</span>
         </li>
         <li>
