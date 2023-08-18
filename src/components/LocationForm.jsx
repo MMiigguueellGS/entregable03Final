@@ -13,8 +13,10 @@ const LocationForm = ({ handleSubmit }) => {
 
     axios
       .get(url)
-      .then(({ data }) => setSuggestions(data.results))
-      .catch((err) => console.log(err));
+      .then(({ data }) =>  setSuggestions(data.results))
+      .catch((err) => {
+        
+      });
   };
   return (
     <>

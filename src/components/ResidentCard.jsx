@@ -15,9 +15,9 @@ const ResidentCard = ({ residentUrl }) => {
     unknown: "bg-slate-500"
   }
   return (
-    <article className=" h-[480px] w-[310px] border-2 border-green-500 ">
-      <header className="border-b-2 border-green-500 relative w-full">
-        <img className="h-full w-full object-cover object-center overflow-hidden " src={ResidentInfo?.image} alt="" />
+    <article className=" h-[480px] w-[280px] border-2 border-green-500 ">
+      <header className="border-b-2 border-green-500 relative w-full overflow-hidden">
+        <img className="h-full w-full object-cover object-center  " src={ResidentInfo?.image} alt="" />
         <div className="flex items-center gap-2 px-4 absolute bottom-[10%] left-[33%] border-2 border-green-500 bg-neutral-950">
           <div className={`h-[10px] aspect-square ${residentStatus[ResidentInfo?.status]} rounded-full`}></div>
           {ResidentInfo?.status}
